@@ -28,6 +28,11 @@ def validate_login(login: str):
         return None
 
     if "@" in login:
+        email_name = login.split("@")[0].lower()
+
+        if email_name in BLACKLIST:
+            return "Логин находится в чёрном списке"
+
         if not EMAIL_RE.match(login):
             return "Неверный формат email"
         return None

@@ -28,7 +28,7 @@ def main():
 
 while True:
     while True:
-        login = input("Введите логин: ")
+        login = input(f"Введите логин: ")
 
         error = validate_login(login)
 
