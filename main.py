@@ -26,7 +26,7 @@ def main():
     logging.info("Логгер успешно сконфигурирован")
     logging.info("Приложение запущено")
 
-
+while True:
     while True:
         login = input("Введите логин: ")
 
